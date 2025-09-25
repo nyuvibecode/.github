@@ -1,0 +1,76 @@
+name: Question
+description: Ask a question or start a discussion
+title: "[Question]: "
+labels: ["question", "discussion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have a question about our projects, music technology, or want to start a discussion? You're in the right place!
+
+  - type: input
+    id: project
+    attributes:
+      label: Related Project/Repository
+      description: Is this question related to a specific project? (Optional)
+      placeholder: e.g., music-analyzer, vibe-player, or "general"
+
+  - type: dropdown
+    id: question-type
+    attributes:
+      label: Question Type
+      description: What type of question is this?
+      options:
+        - General Usage Question
+        - Technical Implementation
+        - Music Theory/Analysis
+        - Audio Processing
+        - Contributing/Development
+        - Project Architecture
+        - Documentation Clarification
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your Question
+      description: What would you like to know?
+      placeholder: Ask your question here...
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Provide any relevant context, what you've already tried, or background information.
+      placeholder: |
+        - What are you trying to accomplish?
+        - What have you tried so far?
+        - Any relevant documentation you've read?
+        - Your experience level with the topic?
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment (if relevant)
+      description: If this is a technical question, please provide environment details
+      placeholder: |
+        - OS: [e.g., macOS, Windows, Linux]
+        - Language/Framework: [e.g., Python 3.10, Node.js 18]
+        - Project version: [e.g., 1.2.3]
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Checklist
+      description: Please confirm the following
+      options:
+        - label: I have searched existing issues and discussions for similar questions
+          required: true
+        - label: I have checked the project documentation
+          required: true
+        - label: I will provide additional information if requested
+          required: true

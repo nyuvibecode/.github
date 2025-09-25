@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🎵 General Discussions
+    url: https://github.com/orgs/nyuvibecode/discussions
+    about: Start a general discussion about music technology, share ideas, or connect with the community
+  - name: 📚 Documentation
+    url: https://github.com/nyuvibecode
+    about: Browse our project documentation and wikis for guides and tutorials
+  - name: 💡 Contribute
+    url: https://github.com/nyuvibecode/.github/blob/main/CONTRIBUTING.md
+    about: Learn how to contribute to our projects and join our community
